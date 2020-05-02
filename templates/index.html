@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form name="passdata" action="/getData" method="post">
+<h1 style="text-align: center;"><strong>Loan Prediction</strong></h1>
+
+<label>Name</label><input type="text" name="name">
+
+<label for="gender"><h3>Gender : </h3></label><select name="gender">
+  <option value="Male">Male</option>
+  <option value="Female">Female</option>
+  </select>
+  
+ 
+  <label for="Credit_History"><h3>Credit_History : </h3></label><select name="Credit_History">
+  <option value="1">1</option>
+  <option value="0">0</option>
+  </select>
+  
+  <label for="Loan_Amount_Term" ><h3>Loan_Amount_Term : </h3></label><select name="Loan_Amount_Term">
+  <option value="480">480</option>
+  <option value="360">360</option>
+  <option value="240">240</option>
+  <option value="120">120</option>
+  
+  </select>
+  
+
+    <label>Applicant Income</label><input type="text" name="ApplicantIncome">
+
+  <label>Loan Amount</label><input type="text" name="loanAmount">
+  <input type="submit" value="Predict">
+  <br>
+  <br>
+  <br>
+  {{ prediction }}
+  </form>
+</body>
+</html>
